@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NeurogenAI Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: black;
+      color: #00ff99;
+      background-image: url('https://neurogenai2025.github.io/assets/matrix_bg.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      width: 140px;
+    }
+    .description {
+      text-align: center;
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 1.2em;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    #chat-container {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: rgba(0,0,0,0.8);
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #00ff99;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://neurogenai2025.github.io/assets/NeuroGen.png" alt="NeurogenAI Logo">
+  </header>
+
+  <div class="description">
+    <h1>Welcome to NeurogenAI</h1>
+    <p>
+      NeurogenAI is your AI-powered assistant trained to solve any coding problem, AI query, or market update. You get 10 free questions, and for more access, you can purchase credits using $NRG.
+    </p>
+    <p>
+      ➤ 100 questions = 500 $NRG<br>
+      ➤ 500 questions = 5000 $NRG<br>
+      ➤ Unlimited access = 10000 $NRG
+    </p>
+  </div>
+
+  <div id="chat-container">
+    <div id="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Ask NeurogenAI anything...">
+    <button onclick="sendMessage()">Send</button>
+    <p id="credit-info"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
